@@ -15,25 +15,25 @@ export default function Home() {
         }}
       />
 
-      <header className="relative z-10">
+      <header className="relative z-30">
         <Toolbar />
       </header>
 
-      <main className="relative z-10 flex-1 flex min-h-0">
-        <aside className="w-64 flex-shrink-0 border-r border-white/[0.06] glass-panel overflow-y-auto">
+      <main className="relative z-0 flex-1 flex min-h-0">
+        <aside className="w-64 flex-shrink-0 border-r border-white/[0.06] glass-panel overflow-y-auto relative z-10">
           <EmitterList />
         </aside>
 
-        <section className="flex-1 relative min-w-0">
+        <section className="flex-1 relative min-w-0 z-0">
           <Viewport3D />
         </section>
 
-        <aside className="w-80 flex-shrink-0 border-l border-white/[0.06] glass-panel overflow-y-auto">
+        <aside className="w-80 flex-shrink-0 border-l border-white/[0.06] glass-panel overflow-y-auto relative z-10">
           <ParamPanel />
         </aside>
       </main>
 
-      <footer className="relative z-10">
+      <footer className="relative z-20">
         <StatusBar />
       </footer>
     </div>
